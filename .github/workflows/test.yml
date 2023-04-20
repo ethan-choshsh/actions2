@@ -1,0 +1,10 @@
+name: Call other workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-workflow:
+    uses: ethan-choshsh/actions/.github/workflows/call.yml@main
+    with:
+      test: 'choshsh'
